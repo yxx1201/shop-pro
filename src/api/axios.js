@@ -10,7 +10,7 @@ export default function $axios(url, method, data) {
         axios({
             url,
             method,
-            [prop]: data || {}
+         [prop]:data||{}
         }).then(res => {
             resolve(res.data)
         }).catch(err => {
